@@ -1,0 +1,203 @@
+/* Offers Page Styles */
+.offers-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./image/background/background5.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 96px;
+  padding-bottom: 48px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.offers-header h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+/* Current Offers Section */
+.current-offers {
+  padding: 64px 0;
+  background: #f9f9f9;
+}
+
+.offers-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.fifty {
+  width: 48%;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #8b4513;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.offer-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.offer-content {
+  padding: 24px;
+}
+
+.offer-includes {
+  list-style: none;
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.offer-includes li {
+  position: relative;
+  margin: 8px 0;
+}
+
+.offer-includes li:before {
+  content: "✓";
+  position: absolute;
+  left: -24px;
+  color: #8b4513;
+}
+
+.offer-price {
+  margin: 16px 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 16px;
+}
+
+.discounted-price {
+  font-size: 19.2px;
+  font-weight: bold;
+  color: #8b4513;
+}
+
+/* Subscription Plans Section */
+.subscription-plans {
+  padding: 64px 0;
+  background: white;
+}
+
+.plans-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.plan-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card.featured {
+  background: #8b4513;
+  color: white;
+}
+
+.plan-header {
+  padding: 24px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.plan-header h3 {
+  margin-bottom: 8px;
+}
+
+.plan-price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan-content {
+  padding: 24px;
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.plan-features li {
+  margin: 12.8px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+.plan-features li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #8b4513;
+}
+
+.plan-card.featured .plan-features li:before {
+  color: white;
+}
+
+.plan-card.featured .btn {
+  background: white;
+  color: #8b4513;
+}
+
+.plan-card.featured .btn:hover {
+  background: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offers-header {
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
+
+  .offers-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .fifty {
+    width: 100%;
+  }
+
+  .plans-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .offers-header h1 {
+    font-size: 32px;
+  }
+}

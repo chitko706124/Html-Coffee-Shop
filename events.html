@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Workshops - Bean Boutique</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./events.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <img
+          src="./image/logo/logo2.jpg"
+          alt="Bean Boutique Logo"
+          class="logo"
+        />
+        <span>Bean Boutique</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee Selection</a></li>
+        <li><a href="equipment.html">Brewing Equipment</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+      </ul>
+      <button class="mobile-menu">☰</button>
+    </nav>
+
+    <!-- Events Header -->
+    <header class="events-header">
+      <div class="container">
+        <h1>Events & Workshops</h1>
+        <p>Join us for exciting coffee experiences</p>
+      </div>
+    </header>
+
+    <!-- Upcoming Events -->
+    <section class="events-section">
+      <div class="container">
+        <h2>Upcoming Events</h2>
+        <div class="events-flex">
+          <!-- Coffee Tasting Event -->
+          <article class="event-card fifty">
+            <div class="event-image">
+              <img src="./image/events/events.jpeg" alt="Coffee Tasting" />
+              <div class="event-date">
+                <span class="day">15</span>
+                <span class="month">MAR</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h3>Coffee Tasting Workshop</h3>
+              <p class="event-time">2:00 PM - 4:00 PM</p>
+              <p class="event-description">
+                Join our expert baristas for an afternoon of coffee tasting.
+                Learn to identify different flavor notes and brewing techniques.
+              </p>
+              <p class="event-price">£25 per person</p>
+              <button class="btn register-btn">Register Now</button>
+            </div>
+          </article>
+
+          <!-- Barista Training -->
+          <article class="event-card fifty">
+            <div class="event-image">
+              <img src="./image/events/events.jpeg" alt="Barista Training" />
+              <div class="event-date">
+                <span class="day">20</span>
+                <span class="month">MAR</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h3>Barista Training Course</h3>
+              <p class="event-time">10:00 AM - 4:00 PM</p>
+              <p class="event-description">
+                Master the art of espresso making in this comprehensive barista
+                training course.
+              </p>
+              <p class="event-price">£99 per person</p>
+              <button class="btn register-btn">Register Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+      <div class="container">
+        <h2>Event Registration</h2>
+        <form class="registration-form">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="event">Select Event</label>
+            <select id="event" name="event" required>
+              <option value="">Choose an event...</option>
+              <option value="tasting">
+                Coffee Tasting Workshop - March 15
+              </option>
+              <option value="barista">
+                Barista Training Course - March 20
+              </option>
+            </select>
+          </div>
+          <button type="submit" class="btn submit-btn">
+            Submit Registration
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <div class="twenty">
+            <div class="footer-section">
+              <h4>Bean Boutique</h4>
+              <p>Premium coffee for coffee lovers</p>
+            </div>
+          </div>
+          <div class="twenty">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="coffee.html">Coffee Selection</a></li>
+                <li><a href="equipment.html">Brewing Equipment</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="twenty">
+            <div class="footer-section">
+              <h4>Contact Us</h4>
+              <p>
+                123 Coffee Street<br />Beantown, BN1 2CF<br />contact@beanboutique.com
+              </p>
+            </div>
+          </div>
+          <div class="twenty">
+            <div class="footer-section">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

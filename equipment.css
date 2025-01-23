@@ -1,0 +1,141 @@
+/* Equipment Page Styles */
+.equipment-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./image/background/background3.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 96px;
+  padding-bottom: 48px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.equipment-header h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.equipment-categories {
+  background: white;
+  padding: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+.tab {
+  padding: 12.8px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: #8b4513;
+  border-bottom-color: #8b4513;
+}
+
+.equipment {
+  padding: 64px 0;
+  background: #f9f9f9;
+}
+
+.equipment-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.equipment-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.equipment-card:hover {
+  transform: translateY(-5px);
+}
+
+.equipment-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.equipment-content {
+  padding: 24px;
+}
+
+.equipment-type {
+  color: #8b4513;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.equipment-details {
+  margin: 16px 0;
+}
+
+.equipment-details ul {
+  list-style: none;
+  margin: 8px 0;
+  padding-left: 16px;
+}
+
+.equipment-details li {
+  margin: 4.8px 0;
+  position: relative;
+}
+
+.equipment-details li:before {
+  content: "•";
+  color: #8b4513;
+  position: absolute;
+  left: -16px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8b4513;
+  margin: 16px 0;
+}
+
+.add-to-cart {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .equipment-header {
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
+
+  .equipment-header h1 {
+    font-size: 32px;
+  }
+
+  .category-tabs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .equipment-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

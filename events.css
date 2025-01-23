@@ -1,0 +1,165 @@
+/* Events Page Styles */
+.events-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./image/background/background4.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 96px;
+  padding-bottom: 48px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.events-header h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.events-section {
+  padding: 64px 0;
+  background: #f9f9f9;
+}
+
+.events-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.fifty {
+  width: 45%;
+}
+
+.event-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  position: relative;
+}
+
+.event-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-date {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: white;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-date .day {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #8b4513;
+}
+
+.event-date .month {
+  display: block;
+  font-size: 12.8px;
+  color: #666;
+}
+
+.event-content {
+  padding: 24px;
+}
+
+.event-time {
+  color: #666;
+  margin: 8px 0;
+}
+
+.event-description {
+  margin: 16px 0;
+}
+
+.event-price {
+  font-weight: bold;
+  color: #8b4513;
+  margin: 16px 0;
+}
+
+.register-btn {
+  width: 100%;
+}
+
+/* Registration Form Styles */
+.registration-section {
+  padding: 64px 0;
+  background: white;
+}
+
+.registration-form {
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 32px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12.8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .events-header {
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
+
+  .events-header h1 {
+    font-size: 32px;
+  }
+
+  .events-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fifty {
+    width: 100%;
+  }
+
+  .registration-form {
+    padding: 24px;
+  }
+}

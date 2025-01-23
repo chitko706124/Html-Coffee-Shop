@@ -1,0 +1,94 @@
+/* Coffee Selection Specific Styles */
+.coffee-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./image/background/background2.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 96px;
+  padding-bottom: 48px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.search-bar {
+  max-width: 600px;
+  margin: 32px auto 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.coffee-catalog {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 0;
+  padding-right: 0;
+  background: #f9f9f9;
+}
+
+.coffee-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.coffee-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.coffee-card:hover {
+  transform: translateY(-5px);
+}
+
+.coffee-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.coffee-content {
+  padding: 24px;
+}
+
+.coffee-type {
+  color: #8b4513;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.coffee-details {
+  margin: 16px 0;
+}
+
+.coffee-details p {
+  margin: 8px 0;
+}
+
+.add-to-cart {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .coffee-header {
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
+  .coffee-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
